@@ -1,4 +1,6 @@
 <template>
+  <div>
+    <back-to-home></back-to-home>
    <div id="main">
      <div class="first">
        <div class="flex one">1</div>
@@ -6,11 +8,16 @@
        <div class="flex three">3</div>
      </div>
    </div>
+  </div>
 </template>
 
 <script>
+  import backToHome from '@/components/backToHome'
 export default {
   name: 'flex-example',
+  components:{
+    backToHome
+  },
   mounted:function(){
     const divlists = document.getElementsByClassName('flex');
     console.log(divlists);

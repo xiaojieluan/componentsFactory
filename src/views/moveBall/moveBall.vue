@@ -1,14 +1,21 @@
 <template>
+  <div>
+    <back-to-home></back-to-home>
   <div id="main">
     <div id="box">
       <div id="ball"></div>
     </div>
   </div>
+  </div>
 </template>
 
 <script>
+  import backToHome from '@/components/backToHome'
 export default {
   name: 'move-ball',
+  components:{
+    backToHome
+  },
   mounted:function(){
     let box = document.getElementById("box");
     let ball = document.getElementById("ball");
